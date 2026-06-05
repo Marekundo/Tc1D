@@ -43,6 +43,7 @@ dependencies = [
     "neighpy",
     "numpy",
     "openmpi",
+    "PyYAML",
     "schwimmbad",
     "scipy",
     "scikit-learn",
@@ -60,6 +61,7 @@ documentation = "https://tc1d.readthedocs.io/"
 
 [project.scripts]
 tc1d-cli = "tc1d.tc1d_cli:main"
+tc1d-gui = "tc1d.gui.app:main"
 
 [tool.ruff]
 # Same as Black.
@@ -129,3 +131,6 @@ pip = ">=25.2,<26"
 pre-commit = ">=4.3.0,<5"
 types-pyyaml = ">=6.0.12.20250915,<7"
 pyyaml = ">=6.0.3,<7"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

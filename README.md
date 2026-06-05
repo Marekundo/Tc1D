@@ -2,10 +2,11 @@
 
 [![DOI](https://zenodo.org/badge/314177994.svg)](https://zenodo.org/badge/latestdoi/314177994)
 [![PyPI - Version](https://img.shields.io/pypi/v/tc1d)](https://pypi.org/project/tc1d/)
-[![Tests](https://github.com/HUGG/TC1D/actions/workflows/run-tests.yml/badge.svg)](https://github.com/HUGG/TC1D/actions/workflows/run-tests.yml)
 [![Documentation Status](https://readthedocs.org/projects/tc1d/badge/?version=latest)](https://tc1d.readthedocs.io/en/latest/?badge=latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HUGG/TC1D/HEAD?urlpath=%2Flab%2Ftree%2Fnotebooks%2Fexplore_tc1d.ipynb)
+
+> **Fork note:** This is a fork of [HUGG/Tc1D](https://github.com/HUGG/Tc1D) that adds a desktop GUI for setting up and running models. See [Desktop GUI](#desktop-gui) below.
 
 T<sub>c</sub>1D is a one-dimensional thermal and thermochronometer age prediction model that can simulate the effects of various geodynamic and geomorphic processes on thermochronometer ages.
 It currently supports prediction of apatite and zircon (U-Th)/He and fission-track ages.
@@ -41,6 +42,16 @@ tc1d-cli --help
 ```
 
 This will return a usage statement and list of flags the code accepts.
+
+## Desktop GUI
+
+This fork adds a Tkinter desktop GUI for setting up and running models without the command line. After installing, launch it with:
+
+```bash
+tc1d-gui
+```
+
+It edits the same YAML config as the CLI, writes each run to its own timestamped folder, and previews the generated plots and CSV files. The GUI has been tested only on macOS — see [GUIREADME.md](GUIREADME.md) for details.
 
 ## References
 

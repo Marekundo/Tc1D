@@ -1,8 +1,19 @@
 .DS_Store
 .ipynb_checkpoints
 .idea
+__pycache__
+
 # pixi environments
 .pixi/*
 !.pixi/config.toml
-__pycache__
 pixi.lock
+
+# Local GUI/runtime artifacts
+.pytest_cache/
+.ruff_cache/
+.tc1d_gui_cache/
+.venv/
+tc1d_gui_runs/
+src/RDAAM_He/RDAAM.o
+src/RDAAM_He/RDAAM_He
+src/ketch_aft/ketch_aft

@@ -193,6 +193,8 @@ def _apply_yaml_to_args(args, y: dict) -> None:
     if isinstance(e, dict):
         if "vx_init" in e:
             args.vx_init = _as_list(float(e["vx_init"]))
+        if "mantle_velocity" in e:
+            args.mantle_velocity = _as_list(float(e["mantle_velocity"]))
         if "ero_type" in e:
             args.ero_type = _as_list(int(e["ero_type"]))
         # BG: keep YAML-defined stages in the raw YAML dict 'y',
